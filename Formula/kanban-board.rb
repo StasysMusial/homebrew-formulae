@@ -1,5 +1,5 @@
 class KanbanBoard < Formula
-  desc "a minimal kanban board TUI"
+  desc "Minimal kanban board TUI"
   homepage "https://github.com/StasysMusial/kanban-board"
   url "https://github.com/StasysMusial/kanban-board/archive/refs/tags/v1.0.1.tar.gz"
   version "1.0.1"
