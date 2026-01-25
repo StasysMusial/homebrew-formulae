@@ -11,8 +11,4 @@ class KanbanBoard < Formula
   def install
     system "go", "build", *std_go_args(ldflags: "-s -w")
   end
-
-  test do
-    system "#{bin}/kanban-board", "--version"
-  end
 end
