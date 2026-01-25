@@ -1,9 +1,9 @@
 class KanbanBoard < Formula
-  desc "a minimal kanban board TUI"
+  desc "Minimal kanban board TUI"
   homepage "https://github.com/StasysMusial/kanban-board"
-  url "https://github.com/StasysMusial/kanban-board/archive/refs/tags/v1.0.0.tar.gz"
-  version "1.0.0"
-  sha256 "993c61f600d65a7e8e2b86f1cf1fd8cd1364e4e6dc854b51516d878616c03a19"
+  url "github.com/StasysMusial/kanban-board"
+  version "1.0.1"
+  sha256 "6e6351663266be990fe8928d25ad5cc92720b7c4816fccdc0b3b029c6e141c06"
   license "MIT"
 
   depends_on "go" => :build
@@ -13,6 +13,6 @@ class KanbanBoard < Formula
   end
 
   test do
-    system "kanban-board", "--version"
+    system bin "/kanban-board", "--version"
   end
 end
