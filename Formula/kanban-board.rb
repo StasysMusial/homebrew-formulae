@@ -1,6 +1,3 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://docs.brew.sh/rubydoc/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class KanbanBoard < Formula
   desc "a minimal kanban board TUI"
   homepage "https://github.com/StasysMusial/kanban-board"
@@ -10,12 +7,6 @@ class KanbanBoard < Formula
   license "MIT"
 
   depends_on "go" => :build
-
-  # Additional dependency
-  # resource "" do
-  #   url ""
-  #   sha256 ""
-  # end
 
   def install
     system "go", "build", *std_go_args(ldflags: "-s -w")
